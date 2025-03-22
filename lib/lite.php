@@ -47,7 +47,6 @@ function post_data($url,$data) {
 	curl_setopt($ch, CURLOPT_USERAGENT, $ua);
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
-	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 	return curl_exec($ch);
 	curl_close($ch);
 }
