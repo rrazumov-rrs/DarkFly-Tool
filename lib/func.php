@@ -17,12 +17,9 @@ Class Bom {
         curl_setopt ($ch, CURLOPT_POSTFIELDS, $params);
         curl_setopt ($ch, CURLOPT_POST, 1); 
         }
-
-        curl_setopt ($ch, CURLOPT_SSL_VERIFYPEER, 0);
         curl_setopt ($ch, CURLOPT_COOKIEJAR, 'cookie.txt');
         curl_setopt ($ch, CURLOPT_COOKIEFILE, 'cookie.txt');
         curl_setopt ($ch, CURLOPT_FOLLOWLOCATION, 1);
-
         $headers  = array();
         $headers[] = 'Content-Type: application/x-www-form-urlencoded; charset=utf-8';
         $headers[] = 'X-Requested-With: XMLHttpRequest';
